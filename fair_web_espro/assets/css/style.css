@@ -1,5 +1,5 @@
 :root {
-    --cor-principal: #F4DFC8;
+    --cor-principal: #f3f3f3;
     --cor-texto-principal: #212121;
     --cor-texto-segundaria: #55C9FF;
     --cor-texto-butom: #F4F4F4;
@@ -43,6 +43,16 @@ header {
     padding: 20px 5%;
 }
 
+header:hover {
+    text-decoration: none;
+    text-decoration: underline;
+    background-color: var(--cor-texto-principal) ;
+    color: #F4DFC8;
+}
+
+
+
+
 .nome_principal {
 text-decoration: none;
 color:var(--cor-principal);
@@ -66,6 +76,8 @@ color:var(--cor-principal);
     text-align: center;
     gap: 9px;
     padding: 50px;
+    text-decoration: none;
+    color: var(--cor-texto-butom);
 }
 
 nav {
@@ -277,4 +289,5 @@ footer p a:hover {
 
 .footer-image {
     height: 20px;
+}
 }
