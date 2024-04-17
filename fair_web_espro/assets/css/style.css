@@ -1,11 +1,12 @@
 :root {
     --cor-principal: #f3f3f3;
     --cor-texto-principal: #212121;
-    --cor-texto-segundaria: #55C9FF;
-    --cor-texto-butom: #F4F4F4;
-    --cor-border-butom: #55C9FF;
+    --cor-texto-segundaria: #fdfdfd;
+    --cor-texto-butom: #f8f8f9;
+    --cor-border-butom: red;
     --cor-butom-houver: #001612;
     --cor-cabecalho: #001823;
+    --cor-price: #41B06E;
     --cor-footer: #CCD3CA;
   }
   
@@ -43,12 +44,12 @@ header {
     padding: 20px 5%;
 }
 
-header:hover {
+/* header:hover {
     text-decoration: none;
     text-decoration: underline;
     background-color: var(--cor-texto-principal) ;
     color: #F4DFC8;
-}
+} */
 
 
 
@@ -56,6 +57,7 @@ header:hover {
 .nome_principal {
 text-decoration: none;
 color:var(--cor-principal);
+font-size: 16px;
 }
 
 
@@ -72,12 +74,15 @@ color:var(--cor-principal);
 
 
 .promocao_header {
-    display: flex;
-    text-align: center;
+    text-align: end;
     gap: 9px;
     padding: 50px;
     text-decoration: none;
     color: var(--cor-texto-butom);
+}
+
+.promocao_header:hover {
+    text-decoration: underline;
 }
 
 nav {
@@ -105,8 +110,9 @@ nav {
 .promotion-header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--cor-footer);
 
-    padding: 15px 5%;
+    padding: 12px 4%;
 }
 
 .promotion-header-title {
@@ -114,11 +120,33 @@ nav {
     color:var(--cor-principal);
 }
 
+.produto_header {
+    font-weight: 700;
+    color:var(--cor-texto-principal);
+}
+
 .line {
     width: 100%;
     height: 1px;
     background-color: var(--cor-cabecalho); /* original: #eee */
 }
+
+/* header:hover {  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    
+    background-color: var(--cor-texto-principal) ;
+    color: #F4DFC8;
+
+    
+
+    height: 180px;
+   gap: 35px;
+  }  */
+
 
 main {
     display: flex;
@@ -178,8 +206,21 @@ main {
     font-weight: 700;
 }
 
+.preço_rs {
+text-decoration: none;
+}
+
+.price_rs { 
+      color: var(--cor-texto-principal);
+} 
+
 .price {
-    color: var(--cor-texto-segundaria);
+    color: var(--cor-price);
+    text-decoration: none;
+}
+
+.price:hover {
+    font-size: 35px;
 }
 
 footer {
@@ -290,4 +331,4 @@ footer p a:hover {
 .footer-image {
     height: 20px;
 }
-}
+
